@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>About me</title>
+</head>
+<body>
+	<div class="header" style="background: url({% static 'images/bg.jpg' %}); background-size: cover;">
+    	<div class="nav">
+        <ul>
+          <li><a href="{% url 'about_me' %}">ABOUT ME</a></li>
+          <li><a href="{% url 'about_group' %}">ABOUT GROUP</a></li>
+          <li><a href="{% url 'about_univer' %}">ABOUT UNIVERSITY</a></li>
+        </ul>
+        </div>
+        <div class="logo">
+        	<a href="">
+            	<img src="{% static 'images/logo.png' %}" alt="Абраменко Вячеслав">
+            </a>
+        </div>
+    </div>
+    <div class="section">
+    	{% block content %}
+        {% endblock %}
+	</div>
+    <div class="footer">
+    	<span class="footer footer__text">
+        	Абраменко Вячеслав 2016
+        </span>
+    </div>
+</body>
+</html>

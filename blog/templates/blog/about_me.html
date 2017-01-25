@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="aside">
+        <img src="{% static "images/photo.jpg" %}" alt="Мое фото">
+    </div>
+    <div class="article">
+        <h1>Абраменко Вячеслав</h1>
+        <div class="text">
+            <p>Меня зовут Вячеслав. Это моя первая лабораторная работа по Web-программированию. При оформлении дальнейшего текста-рыбы я использовал БЭМ.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis orci semper justo aliquam dictum nec vitae velit. Donec porttitor augue sed posuere dapibus. Maecenas vulputate purus massa, non laoreet velit vestibulum eu. <span class="text text_bold">Mauris non feugiat risus.</span> Aliquam dignissim pellentesque fermentum. Aenean eleifend tellus ac magna aliquet posuere.</p>
+            <div class="text text_quote"><p>Morbi a ultrices sapien, vitae auctor augue. Sed elementum, quam et luctus venenatis, justo felis facilisis justo, nec ullamcorper libero libero at mi. Quisque malesuada consequat turpis, ac aliquet odio sagittis eu. Nulla a lectus nec nibh fringilla blandit ac eget metus. Duis id lectus quis sem porttitor lobortis. Duis convallis erat in libero tincidunt, in dignissim ex fringilla. Nullam metus ligula, molestie nec placerat vel, viverra vitae tortor. Integer dictum viverra dui. Nam fringilla sed magna ac mollis. Integer ipsum mauris, feugiat rhoncus vehicula vel, consequat quis massa. Praesent gravida justo in feugiat euismod.</p></div>
+            <p><span class="text text_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Ut quis orci semper justo aliquam dictum nec vitae velit. Donec porttitor augue sed posuere dapibus. Maecenas vulputate purus massa, non laoreet velit vestibulum eu. Mauris non feugiat risus. Aliquam dignissim pellentesque fermentum. Aenean eleifend tellus ac magna aliquet posuere.</p>
+        </div>
+    </div>
+{% endblock %}
